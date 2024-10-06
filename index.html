@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesky Insurance</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--google font-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+</head>
+
+<body class=" bg-gray-100 text-gray-800" style="font-family: 'Space Grotesk', sans-serif; ">
+
+    <!-- Navbar -->
+    <header class="bg-white shadow-md">
+
+        <nav class="flex justify-between items-center p-4">
+
+            <div class="text-xl font-bold">Pesky Insurance</div>
+
+            <div id="menu-toggle" class="cursor-pointer md:hidden">
+
+                <i class="fas fa-bars text-2xl"></i> <!-- Hamburger icon -->
+
+            </div>
+
+            <div class="hidden md:flex space-x-4">
+
+                <a href="#services" class="hover:text-blue-500">Services</a>
+
+                <a href="#pricing" class="hover:text-blue-500">Pricing</a>
+
+                <a href="#testimonials" class="hover:text-blue-500">Testimonials</a>
+
+                <a href="#contact" class="hover:text-blue-500">Contact</a>
+
+            </div>
+
+        </nav>
+
+        <!-- Mobile Menu -->
+
+        <div id="mobile-menu" class="hidden absolute bg-white top-0 right-0 w-full h-screen">
+
+            <div id="close-menu" class="absolute top-4 right-4 cursor-pointer">
+
+                <i class="fas fa-times text-3xl"></i> <!-- Font Awesome close icon -->
+
+            </div>
+
+            <nav class="flex flex-col items-center justify-center h-full">
+
+                <a href="#services" class="block p-4 hover:text-blue-500">Services</a>
+
+                <a href="#pricing" class="block p-4 hover:text-blue-500">Pricing</a>
+
+                <a href="#testimonials" class="block p-4 hover:text-blue-500">Testimonials</a>
+
+                <a href="#contact" class="block p-4 hover:text-blue-500">Contact</a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="h-screen flex flex-col items-center justify-center text-center bg-blue-500 text-white">
+        <h1 class="text-4xl font-bold fade-in">Welcome to Pesky Insurance</h1>
+        <h2 class="text-3xl font-bold fade-in">Protect Your Pet with Comprehensive Insurance Plans</h1>
+
+            <p class="mt-4 fade-in">Your trusted partner for pet insurance.</p>
+            <div class="mt-6"> <a href="#contact"
+                    class="bg-white text-blue-500 px-4 py-2 rounded hover:bg-blue-100 transition">I'm Ready</a> <a
+                    href="#learn-more"
+                    class="bg-transparent border-2 border-white text-white px-4 py-2 rounded hover:bg-white hover:text-blue-500 transition">Secure
+                    my Pet</a>
+            </div>
+    </section> <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-200">
+        <h2 class="text-3xl text-center font-bold mb-10 fade-in">Our Services</h2>
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!--offer card 1-->
+            <div class="bg-white p-6 shadow hover:shadow-lg rounded-lg fade-in ">
+                <i class="fa-solid fa-calendar-day text-4xl mb-4 px-8"></i>
+                <h3 class="font-semibold text-3xl">Monthly Treatments</h3>
+                <p class="mt-2">Regular check-ups and preventive care for your pets.</p>
+                <p class="mt-2">Monthly supply of supplement.</p>
+            </div>
+            <div class="bg-white p-6 shadow hover:shadow-lg rounded-lg fade-in ">
+                <i class="fa-solid fa-heart-pulse text-4xl mb-4 px-8 "></i>
+                <h3 class="font-semibold text-3xl">Emergency Coverage </h3>
+                <p class="mt-2">24/7 Support for emergencies and urgent care.</p>
+                <p class="mt-2">Coverage for unexpected emergencies and illness.</p>
+            </div>
+            <div class="bg-white p-6 shadow hover:shadow-lg rounded-lg fade-in ">
+                <i class="fas fa-dog text-4xl mb-4 px-8 "></i>
+                <h3 class="font-semibold text-3xl">Pet Replacements </h3>
+                <p class="mt-2">Replace your pet incase of unexpected death.</p>
+                <p class="mt-2">Financial support for replacing your lost pet.</p>
+            </div>
+        </div>
+    </section> <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-blue-50">
+        <h2 class="text-3xl text-center font-bold mb-10 fade-in">Pricing Plans</h2>
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!--basic plan-->
+            <div class="bg-gray-200 p-6 rounded-lg shadow-md fade-in">
+                <h3 class="font-semibold text-4xl">Basic Plan</h3>
+                <h2 class="font-semibold text-lg">&#8358 35,200.00</h2>
+                <p class="mt-2">Includes monthly treatments.</p>
+                <p class="mt-2">Includes monthly supplement.</p>
+                <p class="mt-2">Newsletter on pet care and feeding techniques.</p>
+                <p class="mt-2">Includes pet boarding for up to 3days.</p>
+
+                <button class="bg-blue-600 rounded text-white font-semibold px-4 py-2 mt-4 hover:bg-white hover:text-blue-500 transition">Let's Go!</button>
+            </div>
+
+            <div class="bg-gray-200 p-6 rounded-lg shadow-md fade-in">
+                <h3 class="font-semibold text-4xl">Standard Plan</h3>
+                <h2 class="font-semibold text-lg">&#8358 59,200.00</h2>
+                <p class="mt-2">Includes pet mating.</p>
+                <p class="mt-2">Includes pest control.</p>
+                <p class="mt-2">Includes pet exercise.</p>
+                <p class="mt-2">Includes pet diet plan.</p>
+                <p class="mt-2">Includes pet ocialization.</p>
+                <p class="mt-2">Includes monthly treatments.</p>
+                <p class="mt-2">Includes monthly supplement.</p>
+                <p class="mt-2">Includes emergencies coverage.</p>
+                <p class="mt-2">Newsletter on pet care and feeding techniques.</p>
+                <p class="mt-2">Includes pet boarding for up to 12days.</p>
+
+
+                <button class="bg-blue-600 rounded text-white font-semibold px-4 py-2 mt-4 hover:bg-white hover:text-blue-500 transition">Let's Go!</button>
+            </div>
+
+            <div class="bg-gray-200 p-6 rounded-lg shadow-md fade-in">
+                <h3 class="font-semibold text-4xl">Premium Plan</h3>
+                <h2 class="font-semibold text-lg">&#8358 83,200.00</h2>
+                <p class="mt-2">Includes pet exercise.</p>
+                <p class="mt-2">Includes pet training.</p>
+                <p class="mt-2">Includes pet diet plan.</p>
+                <p class="mt-2">Includes pet grooming.</p>
+                <p class="mt-2">Includes pet replacement.</p>
+                <p class="mt-2">Includes pet socialization.</p>
+                <p class="mt-2">Includes monthly treatments.</p>
+                <p class="mt-2">Includes monthly supplements.</p>
+                <p class="mt-2">Includes emergencies coverage.</p>
+                <p class="mt-2">Includes pet 1 bag of pet food.</p>
+                <p class="mt-2">Includes pest control & environmental fumigation.</p>            
+                <p class="mt-2">Newsletter on pet care and feeding techniques.</p>
+                <p class="mt-2">Includes pet boarding for up to 18days.</p>
+
+
+                <button class="bg-blue-600 rounded text-white font-semibold px-4 py-2 mt-4 hover:bg-white hover:text-blue-500 transition">Let's Go!</button>
+            </div>
+           
+        </div>
+    </section> <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gray-200 rounded-lg shadow-lg" >
+        <h2 class="text-3xl text-center font-bold mb-10 fade-in">What Our Clients Say</h2>
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
+            <div class="bg-white p-6 shadow-md rounded-lg fade-in hover:shadow-lg">
+                <p class="italic">"This insurance saved my dog from Parvo virus!"</p>
+                <p class="mt-4 font-semibold">- Lucy O.</p>
+            </div>
+            <div class="bg-white p-6 shadow-md rounded-lg fade-in hover:shadow-lg">
+                <p class="italic">"The best way to protect your pet without breaking the bank."/p>
+                <p class="mt-4 font-semibold">- Madam Rita.</p>
+            </div>
+            <div class="bg-white p-6 shadow-md rounded-lg fade-in hover:shadow-lg">
+                <p class="italic">"Getting recomendations and tips to make my dog healthier, I love it."</p>
+                <p class="mt-4 font-semibold">- Roxanne A.</p>
+            </div>
+            <div class="bg-white p-6 shadow-md rounded-lg fade-in hover:shadow-lg">
+                <p class="italic">"Peace of mind knowing my pet is secured"</p>
+                <p class="mt-4 font-semibold">- Thomson B.</p>
+
+            </div>
+            <div class="bg-white p-6 shadow-md rounded-lg fade-in">
+                <p class="italic">"They took great care of my pet during her pregncy."</p>
+                <p class="mt-4 font-semibold">- Dare M.</p>
+
+            </div>
+        </div>
+    </section>
+     <!-- Contact Section -->
+    <section id="contact" class="py-12 bg-gray-100">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+            <form class="space-y-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <input type="text" placeholder="Name" class="p-3 border rounded-md w-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                    <input type="email" placeholder="Email" class="p-3 border rounded-md w-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                    <input type="text" placeholder="Location" class="p-3 border rounded-md w-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                    <input type="tel" placeholder="Phone" class="p-3 border rounded-md w-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                </div>
+                <textarea placeholder="Your Message" class="p-3 border rounded-md w-full h-32 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                <button type="submit" class="w-full bg-blue-500 text-white py-3 rounded-md hover:bg-blue-600 transition-all duration-300">Submit</button>
+            </form>
+        </div>
+    </section>
+    
+     <!-- Footer -->
+    <footer class="fade-in py-4 bg-gray-800 text-white text-center">
+
+        <div class="flex justify-center space-x-4">
+
+            <a href="#" class="text-white hover:text-gray-400"><i class="fab fa-whatsapp"></i></a>
+
+            <a href="#" class="text-white hover:text-gray-400"><i class="fab fa-twitter"></i></a>
+
+            <a href="#" class="text-white hover:text-gray-400"><i class="fab fa-instagram"></i></a>
+
+        </div>
+
+        <p class="mt-2">&copy; 2024 Pesky Insurance. All Rights Reserved.</p>
+
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
